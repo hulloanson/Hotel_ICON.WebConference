@@ -28,6 +28,13 @@ $di->setShared('url', function () {
 });
 
 /**
+ * Set up the router
+ */
+$di->set('router', function () {
+    return require './router.php';
+});
+
+/**
  * Setting up the view component
  */
 $di->setShared('view', function () {
