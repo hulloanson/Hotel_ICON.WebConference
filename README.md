@@ -27,3 +27,13 @@
 1. Can either use the [Volts](https://docs.phalconphp.com/en/latest/reference/volt.html) template (\*.volt) or the PHP template (\*.phtml)
 2. Data are passed from controller to view via setVar or magic setters. For details see [this](https://docs.phalconphp.com/en/latest/reference/controllers.html)
 3. Each folder is an endpoint relative to root. `index.volt/index.phtml` will be the index of the endpoint; `[name].volt/[name].phtml` will be nested endpoint `[endpoint]/[name]` 
+
+### Send data without using view / override view
+
+1. In the desired endpoint function, return a [Response](https://docs.phalconphp.com/en/latest/api/Phalcon_Http_Response.html) object
+
+### Obtaining GET/POST data
+1. See [https://docs.phalconphp.com/en/latest/reference/controllers.html#request-and-response]
+
+### More details on how to use Phalcon
+1. See [https://docs.phalconphp.com/en/latest/index.html]
