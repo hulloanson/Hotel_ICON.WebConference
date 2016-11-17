@@ -1,6 +1,6 @@
 <?php
 
-class SurveyController extends \Phalcon\Mvc\Controller
+class SurveyController extends ControllerBase
 {
 
     public function indexAction()

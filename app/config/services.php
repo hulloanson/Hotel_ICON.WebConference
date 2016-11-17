@@ -31,7 +31,7 @@ $di->setShared('url', function () {
  * Set up the router
  */
 $di->set('router', function () {
-    return require './router.php';
+    return require  __DIR__ . '/router.php';
 });
 
 /**
@@ -63,24 +63,6 @@ $di->setShared('view', function () {
 
     return $view;
 });
-
-///**
-// * Database connection is created based in the parameters defined in the configuration file
-// */
-//$di->setShared('db', function () {
-//    $config = $this->getConfig();
-//
-//    $class = 'Phalcon\Db\Adapter\Pdo\\' . $config->database->adapter;
-//    $connection = new $class([
-//        'host'     => $config->database->host,
-//        'username' => $config->database->username,
-//        'password' => $config->database->password,
-//        'dbname'   => $config->database->dbname,
-//        'charset'  => $config->database->charset
-//    ]);
-//
-//    return $connection;
-//});
 
 $di->set('mongo', function () {
     $config = $this->getConfig()->mongodb;

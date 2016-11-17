@@ -11,4 +11,11 @@ class Test extends Collection
         $this->setSource('test');
     }
 
+    public static function testRegexSearch() {
+        return self::find(
+            [
+                'test_name' => '/.*hi.*/'
+            ]
+        );
+    }
 }

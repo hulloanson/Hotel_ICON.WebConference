@@ -1,8 +1,9 @@
 <?php
 
-use Phalcon\Mvc\Controller;
 
-class ControllerBase extends Controller
+class ControllerBase extends Phalcon\Mvc\Controller
 {
-
+    public static function getResponseJson($obj) {
+        return new \Phalcon\Http\Response(json_encode($obj));
+    }
 }
