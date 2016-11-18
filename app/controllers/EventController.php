@@ -13,15 +13,23 @@ class EventController extends ControllerBase
         $this->view->haha = 'hehe';
     }
 
-    public function apiIDGetAction($id) {
-        return self::getResponseJson(Event::findById($id));
+    public function apiIDGetAction() {
+        return self::getResponseJson(Event::findById(
+            $this->dispatcher->getParam('id')
+        ));
     }
 
-    public function searchTitleAction($title) {
-        return self::getResponseJson(Event::searchByTitle($title));
+    public function apiSearchTitleAction() {
+        return self::getResponseJson(Event::searchByTitle(
+            $this->dispatcher->getParam('title')
+        ));
     }
 
-    public function getByDateAction($year, $month, $day) {
-        return self::getResponseJson(Event::getByDate($year, $month, $day));
+    public function apiGetByDateAction() {
+        return self::getResponseJson(Event::getByDate(
+            $this->dispatcher->getParam('year'),
+            $this->dispatcher->getParam('month'),
+            $this->dispatcher->getParam('day')
+        ));
     }
 }

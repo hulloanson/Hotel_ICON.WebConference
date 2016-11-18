@@ -26,5 +26,16 @@ class Survey extends Collection
         $this->setSource('event');
     }
 
-    
+    public static function initSave($survey) {
+        $surveyIns = new Survey();
+        $surveyIns->email = $survey->email;
+        $surveyIns->answers = $survey->answers;
+        return $surveyIns->save();
+    }
+
+    public static function getByEmail($email) {
+        return self::find([
+            'email' => $email
+        ]);
+    }
 }

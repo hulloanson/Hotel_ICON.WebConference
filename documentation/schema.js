@@ -1,3 +1,4 @@
+// TODO: fix some inaccurate models
 var models = {
     'event': {
         'name': 'string',

@@ -86,7 +86,7 @@ class Event extends Collection
         //TODO: find some ways to escape input for regex match
         return Event::find(
             [
-                'or' => [
+                '$or' => [
                     'begin_time' => '/^' . $date . '.*/',
                     'end_time' => '/^' . $date . '.*/',
                 ]

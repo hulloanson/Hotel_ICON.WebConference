@@ -60,5 +60,11 @@ class TestController extends ControllerBase
             'email' => $email
         ]);
     }
+
+    public function testRouterParamAction() {
+        return self::getResponseJson([
+            'param' => $this->dispatcher->getParam('param')
+        ]);
+    }
 }
 
