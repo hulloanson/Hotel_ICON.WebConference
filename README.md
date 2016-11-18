@@ -1,5 +1,8 @@
 *The COMP3421 project's brief dev guide*
 
+### HTTP API endpoints doc
+See [this](./documentation/http-api.md). 
+
 ### Using JNL server for testing
 1. Login ssh
 2. `git clone http://gogs.voidspace.me/WebDevelopment/Hotel_ICON.WebConference.git public_html`
