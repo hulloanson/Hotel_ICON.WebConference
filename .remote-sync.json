@@ -1,0 +1,16 @@
+{
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": true,
+  "hostname": "jnl.ddns.net",
+  "port": "22",
+  "target": "/home/alvin/public_html",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "alvin",
+  "password": "alvin",
+  "watch": [],
+  "transport": "scp"
+}
