@@ -7,7 +7,10 @@ class EventController extends ControllerBase
     {
 
     }
+    public function helloAction()
+    {
 
+    }
     public function apiAllAction()
     {
         $this->view->haha = 'hehe';
