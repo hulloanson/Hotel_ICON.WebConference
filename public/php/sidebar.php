@@ -2,40 +2,41 @@
 <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
         <li class="sidebar-brand">
-            <a href="#">
+            <a href="intro.php">
                 Welcome
             </a>
         </li>
         <li>
-            <a href="#">Events</a>
+            <a href="events.php">Events</a>
         </li>
         <li>
-            <a href="#">Speakers</a>
+            <a href="speakers.php">Speakers</a>
         </li>
         <li>
-            <a href="#">Abstracts</a>
+            <a href="abstracts.php">Abstracts</a>
         </li>
         <li>
-            <a href="#">Attractions</a>
+            <a href="attractions.php">Attractions</a>
         </li>
         <li>
-            <a href="#">Survey</a>
+            <a href="survey.php">Survey</a>
         </li>
         <li>
-            <a href="#">Report</a>
+            <a href="report.php">Report</a>
         </li>
         <li>
-            <a href="#">About Us</a>
+            <a href="aboutus.php">About Us</a>
         </li>
         <li>
-            <a href="#">Contributors</a>
+            <a href="contributors.php">Contributors</a>
         </li>
         <li>
-            <a href="#">Sponsors</a>
+            <a href="sponsors.php">Sponsors</a>
         </li>
         <li>
-            <a href="#">Floor Plan</a>
+            <a href="floorplan.php">Floor Plan</a>
         </li>
+
     </ul>
 </div>
 <!-- /#sidebar-wrapper -->
